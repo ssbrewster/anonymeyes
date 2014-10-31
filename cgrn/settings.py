@@ -180,7 +180,7 @@ THIRD_PARTY_APPS = (
     'south',
 
     # Static file management:
-    'compressor',
+    #'compressor',
 
     # Asynchronous task queue:
     #'djcelery',
