@@ -188,7 +188,7 @@ THIRD_PARTY_APPS = (
     # Recaptcha
     #'captcha',
 
-    'csvimport',
+    #'csvimport',
 )
 
 LOCAL_APPS = (
