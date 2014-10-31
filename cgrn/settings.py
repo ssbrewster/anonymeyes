@@ -186,7 +186,7 @@ THIRD_PARTY_APPS = (
     #'djcelery',
 
     # Recaptcha
-    'captcha',
+    #'captcha',
 
     'csvimport',
 )
