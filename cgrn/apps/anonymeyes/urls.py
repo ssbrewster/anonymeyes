@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
-from apps.anonymeyes.views import *
+from cgrn.apps.anonymeyes.views import IndexView, ContactView, ThanksView, AboutView
+from cgrn.apps.anonymeyes.views import PatientListView, PatientDetailView, PatientDeleteView, PatientCreateView, PatientUpdateView
 
 urlpatterns = patterns('apps.anonymeyes.views',
                        url(r'^$', IndexView.as_view(), name='index'),
