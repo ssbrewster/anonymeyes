@@ -148,7 +148,7 @@ class Complication(models.Model):
 
 class Surgery(models.Model):
     name = models.CharField(max_length=64)
-    adjuvant = models.BooleanField()
+    adjuvant = models.BooleanField(default=None)
     sort = models.IntegerField(default=10)
     
     class Meta:
