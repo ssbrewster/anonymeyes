@@ -7,9 +7,9 @@ from django.http import HttpResponseRedirect
 from django.forms.models import construct_instance
 from django.views.generic import TemplateView, ListView, DetailView, UpdateView, CreateView, FormView, DeleteView
 from django.utils.decorators import method_decorator
-from apps.anonymeyes.admin import PatientAdminForm
-from apps.anonymeyes.forms import *
-from apps.anonymeyes.models import Patient, Management
+from cgrn.apps.anonymeyes.admin import PatientAdminForm
+from cgrn.apps.anonymeyes.forms import *
+from cgrn.apps.anonymeyes.models import Patient, Management
 
 class IndexView(TemplateView):
     template_name='anonymeyes/index.html'
