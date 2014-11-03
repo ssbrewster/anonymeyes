@@ -60,7 +60,7 @@ class PatientBaselineForm(forms.ModelForm):
         lens_status_left = self.cleaned_data.get('lens_status_left')
         if lens_status_left and lens_status_left.name != 'Aphakia' and lens_status_left.name != 'Pseudophakia':
             return None
-        return lens_extraction_date_right
+        return lens_extraction_date_left
 
 class PatientManagementForm(forms.ModelForm):
     class Meta:
