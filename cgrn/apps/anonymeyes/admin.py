@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django import forms
 
-from apps.anonymeyes.models import *
+from cgrn.apps.anonymeyes.models import *
 
 admin.site.register(EthnicGroup)
 admin.site.register(DiagnosisGroup)
