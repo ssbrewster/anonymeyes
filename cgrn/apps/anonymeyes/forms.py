@@ -65,11 +65,11 @@ class PatientBaselineForm(forms.ModelForm):
 class PatientManagementForm(forms.ModelForm):
     class Meta:
         model = Management
+        fields = ('created_at', 'updated_at', 'date', 'eye', 'type', 'surgery', 'complication', 'adjuvant', 'comments')
         widgets = {
                    'date': forms.DateInput(attrs={'class':'datepicker past'}),
                    'comments': forms.Textarea(attrs={'rows':1}),
         }
-        exclude = { 'patient', 'created_by', 'updated_by', }
         
     def clean_surgery(self):
         surgery = self.cleaned_data.get('surgery')
