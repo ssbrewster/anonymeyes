@@ -95,13 +95,14 @@ class PatientManagementForm(forms.ModelForm):
 class PatientOutcomeForm(forms.ModelForm):
     class Meta:
         model = Outcome
+        fields = ('created_at', 'updated_at', 'date', 'eye', 'iop_control', 'visual_acuity_method',
+                  'visual_acuity_right', 'visual_acuity_left', 'visual_acuity_both')
         widgets = {
                    'date': forms.DateInput(attrs={'class':'datepicker past'}),
                    'visual_acuity_right': forms.TextInput(attrs={'class': 'small', 'size':'10'}),
                    'visual_acuity_left': forms.TextInput(attrs={'class': 'small', 'size':'10'}),
                    'visual_acuity_both': forms.TextInput(attrs={'class': 'small', 'size':'10'}),
         }
-        exclude = { 'patient', 'created_by', 'updated_by', }
 
 PatientManagementFormSet = forms.models.inlineformset_factory(Patient, Management, form = PatientManagementForm, extra=1, can_delete=False)
 
