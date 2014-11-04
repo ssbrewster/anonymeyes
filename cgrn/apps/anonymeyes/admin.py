@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django import forms
 
-from cgrn.apps.anonymeyes.models import *
+from cgrn.apps.anonymeyes.models import EthnicGroup, DiagnosisGroup, LensStatus, VisualAcuityMethod, IOPControl,\
+    ManagementType, Complication, Adjuvant, Tonometry, Management, Outcome, Patient, Surgery, Diagnosis
 
 admin.site.register(EthnicGroup)
 admin.site.register(DiagnosisGroup)
