@@ -8,7 +8,7 @@ from django.forms.models import construct_instance
 from django.views.generic import TemplateView, ListView, DetailView, UpdateView, CreateView, FormView, DeleteView
 from django.utils.decorators import method_decorator
 from cgrn.apps.anonymeyes.admin import PatientAdminForm
-from cgrn.apps.anonymeyes.forms import *
+from .forms import *
 from .models import Patient, Management
 
 class IndexView(TemplateView):

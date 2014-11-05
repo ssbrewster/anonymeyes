@@ -5,7 +5,7 @@ from django.template.loader import get_template
 from django.template import Context
 from django.conf import settings
 from captcha.fields import ReCaptchaField
-from apps.anonymeyes.models import Patient, Management, Outcome
+from .models import Patient, Management, Outcome
 
 class ContactForm(forms.Form):
     name = forms.CharField()
