@@ -12,7 +12,7 @@ from .forms import *
 from .models import Patient, Management
 
 class IndexView(TemplateView):
-    template_name='anonymeyes/index.html'
+    template_name = 'anonymeyes/index.html'
 
 class AboutView(TemplateView):
     template_name='anonymeyes/about.html'
