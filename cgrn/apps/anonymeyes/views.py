@@ -7,7 +7,7 @@ from django.http import HttpResponseRedirect
 from django.forms.models import construct_instance
 from django.views.generic import TemplateView, ListView, DetailView, UpdateView, CreateView, FormView, DeleteView
 from django.utils.decorators import method_decorator
-from cgrn.apps.anonymeyes.admin import PatientAdminForm
+from .admin import PatientAdminForm
 from .forms import *
 from .models import Patient, Management
 
