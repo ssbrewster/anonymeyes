@@ -15,10 +15,10 @@ class IndexView(TemplateView):
     template_name = 'anonymeyes/index.html'
 
 class AboutView(TemplateView):
-    template_name='anonymeyes/about.html'
+    template_name = 'anonymeyes/about.html'
 
 class ContactView(FormView):
-    template_name='anonymeyes/contact.html'
+    template_name = 'anonymeyes/contact.html'
     success_url = '/anonymeyes/thanks/'
 
     def get_form_class(self):
