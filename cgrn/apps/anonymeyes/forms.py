@@ -65,7 +65,7 @@ class PatientBaselineForm(forms.ModelForm):
 class PatientManagementForm(forms.ModelForm):
     class Meta:
         model = Management
-        fields = ('created_at', 'updated_at', 'date', 'eye', 'type', 'surgery', 'complication', 'adjuvant', 'comments')
+        fields = ('date', 'eye', 'type', 'surgery', 'complication', 'adjuvant', 'comments')
         widgets = {
                    'date': forms.DateInput(attrs={'class':'datepicker past'}),
                    'comments': forms.Textarea(attrs={'rows':1}),
@@ -95,7 +95,7 @@ class PatientManagementForm(forms.ModelForm):
 class PatientOutcomeForm(forms.ModelForm):
     class Meta:
         model = Outcome
-        fields = ('created_at', 'updated_at', 'date', 'eye', 'iop_control', 'visual_acuity_method',
+        fields = ('date', 'eye', 'iop_control', 'visual_acuity_method',
                   'visual_acuity_right', 'visual_acuity_left', 'visual_acuity_both')
         widgets = {
                    'date': forms.DateInput(attrs={'class':'datepicker past'}),

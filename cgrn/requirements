@@ -1,0 +1,4 @@
+Django==1.7
+django_compressor==1.4
+django_recaptcha==1.0.2
+django-csvimport==2.2

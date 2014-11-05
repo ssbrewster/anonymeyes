@@ -178,15 +178,16 @@ DJANGO_APPS = (
 THIRD_PARTY_APPS = (
 
     # Static file management:
-    #'compressor',
+    'compressor',
 
     # Asynchronous task queue:
     #'djcelery',
 
     # Recaptcha
-    #'captcha',
+    'captcha',
 
-    #'csvimport',
+    # csvimport use AppConfig for django >=1.7 csvimport >=2.2
+    'csvimport.app.CSVImportConf'
 )
 
 LOCAL_APPS = (
