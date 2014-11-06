@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block nav-create %}
-<li{% if not patient.uuid %} class="active"{% endif %}><a href="{% url create %}"><strong>Create</strong> Dataset</a></li>
+<li{% if not patient.uuid %} class="active"{% endif %}><a href="{% url 'create' %}"><strong>Create</strong> Dataset</a></li>
 {% endblock %}
 {% block title %}{% if patient.uuid %}Update Dataset {{ patient.uuid }}{% else %}Create Dataset{% endif %}{% endblock %}
 {% block content %}
@@ -15,7 +15,7 @@
 		<div class="actions clearfix">
 			<ul>
 				<li><input type="submit" value="Save" /></li>
-				<li><a href="{% if patient.uuid %}{% url detail patient.id %}{% else %}{% url list %}{% endif %}">Cancel</a></li>
+				<li><a href="{% if patient.uuid %}{% url detail patient.id %}{% else %}{% url 'list' %}{% endif %}">Cancel</a></li>
 			</ul>
 		</div>
 		<p>Please note that required fields are denoted by an *</p>
@@ -79,7 +79,7 @@
 		<div class="actions clearfix">
 			<ul>
 				<li><input type="submit" value="Save" /></li>
-				<li><a href="{% if patient.uuid %}{% url detail patient.id %}{% else %}{% url list %}{% endif %}">Cancel</a></li>
+				<li><a href="{% if patient.uuid %}{% url detail patient.id %}{% else %}{% url 'list' %}{% endif %}">Cancel</a></li>
 			</ul>
 		</div>
 	</form>
